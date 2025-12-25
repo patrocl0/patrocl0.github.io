@@ -7,58 +7,334 @@
     <link rel="stylesheet" href="pages/index.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#work">Work</a>
-        <a href="#frameworks">Frameworks</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <div></div>
+          <ul class="nav__links">
+            <li>
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li>
+              <a href="#Frameworks" class="nav__link">Frameworks</a>
+            </li>
+            <li>
+              <a href="#About" class="nav__link">About</a>
+            </li>
+            <li>
+              <a href="#Contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__text-box row">
+          <div class="header__text">
+            <h1 class="heading-primary">
+              <span>Stiven Mora</span>
+            </h1>
+            <p>A Story of a Web Developer and his Work.</p>
+            <a href="#contact" class="btn btn--pink">Get in touch</a>
+          </div>
+        </div>
+      </header>
 
-    <section id="hero">
-      <h1>Mi Nombre</h1>
-      <p>A Story of a Web Developer and his Work.</p>
-      <a href="#contact">Get in touch</a>
-    </section>
+      <main class="content">
+        <section id="work">
+          <h2 class="titleWork">My Work</h2>
+          <div class="work__boxes">
+            <div class="work__box">
+              <div class="work__text">
+                <h3>De Patria a patria, Galeria y descripcion de lugares!</h3>
+                <h3 class="work__text-bold">Objetivo</h3>
 
-    <section id="work">
-      <h2>My Work</h2>
+                <p>
+                  Mi objetivo fue desarrollar un sitio web responsivo partiendo
+                  de un diseño en Figma, asegurándome de que funcionara
+                  correctamente en diferentes tamaños de pantalla (1280px, 768px
+                  y 320px), siguiendo buenas prácticas de maquetación y control
+                  de versiones.
+                </p>
+                <p>
+                  El principal reto fue adaptar un diseño estático a un sitio
+                  web completamente responsivo, evitando el uso excesivo de
+                  valores fijos en CSS y asegurando que el contenido se ajustara
+                  correctamente sin generar desplazamiento horizontal en
+                  distintos dispositivos y navegadores.
+                </p>
 
-      <div class="project">
-        <h3>Proyecto 1</h3>
-        <p>Descripción breve del proyecto y tecnologías usadas</p>
-        <a href="https://link-al-proyecto">Visit Site →</a>
-        <a href="https://github.com/...">Código</a>
-      </div>
+                <h3>Características del proyecto</h3>
 
-      <div class="project">
-        <h3>Proyecto 2</h3>
-        <p>Descripción breve aquí</p>
-        <a href="https://link-al-proyecto2">Visit Site →</a>
-        <a href="https://github.com/...">Código</a>
-      </div>
-    </section>
+                <ul>
+                  <li>
+                    Diseño totalmente responsivo adaptado a resoluciones de
+                    1280px, 768px y 320px.
+                  </li>
+                  <li>
+                    Maquetación basada en Flexbox y CSS Grid para una estructura
+                    flexible y escalable.
+                  </li>
+                  <li>
+                    Implementación de media queries para transiciones suaves
+                    entre puntos de ruptura.
+                  </li>
+                  <li>
+                    Desarrollo siguiendo el diseño original de Figma, respetando
+                    espaciados, tipografías y layout.
+                  </li>
+                  <li>
+                    Uso de enlaces de marcador de posición (por ejemplo, para el
+                    botón de compra de NFT).
+                  </li>
+                  <li>
+                    Control de versiones con Git, utilizando ramas para nuevas
+                    secciones y funcionalidades.
+                  </li>
+                  <li>Despliegue del proyecto en GitHub Pages.</li>
+                </ul>
 
-    <section id="frameworks">
-      <h2>Frameworks & Skills</h2>
-      <p>HTML5 · CSS3 · JavaScript · React · ...</p>
-    </section>
+                <h3>¿Qué aprendí y qué logré?</h3>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Soy un desarrollador web con pasión por ...</p>
-      <a href="mi-curriculum.pdf">My Resume</a>
-    </section>
+                <p>
+                  Aprendí a trabajar de forma estructurada dividiendo el
+                  proyecto en etapas pequeñas, a usar Flexbox y CSS Grid para
+                  crear diseños responsivos, y a aplicar media queries de manera
+                  eficiente. También reforcé el uso de Git y ramas para
+                  organizar el desarrollo y el despliegue del proyecto en GitHub
+                  Pages, logrando un sitio funcional, adaptable y alineado con
+                  el diseño original de Figma.
+                </p>
 
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <p>Correo: micorreo@dominio.com</p>
-      <p>GitHub · LinkedIn</p>
-    </section>
+                <div class="work__logo">
+                  <a
+                    href="https://github.com/patrocl0/web_project_homeland"
+                    title="View Source Code"
+                  >
+                    <img src="images/github-mark-white.svg" alt="Logo github" />
+                  </a>
+                </div>
+              </div>
 
-    <footer>
-      <p>© 2025 - Mi Nombre</p>
-    </footer>
+              <div class="work__image-box">
+                <img
+                  class="work__image"
+                  src="images/header_homeland.png"
+                  alt="primera imagen de prueba"
+                />
+
+                <img
+                  class="work__image"
+                  src="images/section1_homeland.png"
+                  alt="primera imagen de prueba"
+                />
+                <img
+                  class="work__image"
+                  src="images/section2_homeland.png"
+                  alt="primera imagen de prueba"
+                />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>¡Comparte tus bandas favoritas con otras usuarios!</h3>
+                <h3 class="work__text-bold">Objetivo</h3>
+                <p>
+                  Este proyecto es una página web desarrollada con fines
+                  educativos y prácticos, cuyo objetivo fue profundizar en la
+                  interactividad con JavaScript, el manejo del DOM, y la
+                  organización del código frontend. A partir de un diseño
+                  proporcionado en Figma, se construyó una aplicación
+                  interactiva donde los usuarios pueden visualizar, agregar y
+                  eliminar tarjetas con imágenes. Inicialmente, la aplicación
+                  carga seis tarjetas de forma dinámica utilizando JavaScript.
+                  Los usuarios pueden añadir nuevas tarjetas mediante un
+                  formulario emergente, interactuar con ellas a través del botón
+                  de “me gusta” y eliminarlas cuando lo deseen. Además, al hacer
+                  clic en una imagen, se abre una ventana emergente que muestra
+                  la imagen en mayor tamaño, respetando un diseño adaptativo y
+                  sin generar desplazamiento horizontal. En una etapa posterior,
+                  el proyecto se centró en la refactorización del código,
+                  aplicando programación orientada a objetos y JavaScript
+                  modular. Se crearon clases como Card, encargada de generar y
+                  gestionar las tarjetas, y FormValidator, responsable de
+                  validar los formularios. El código fue dividido en módulos
+                  ES6, separando responsabilidades y mejorando la mantenibilidad
+                  y escalabilidad del proyecto. Este proyecto representa la
+                  transición desde los fundamentos de JavaScript hacia una
+                  arquitectura más estructurada, aplicando buenas prácticas de
+                  desarrollo frontend, diseño responsivo y control de versiones,
+                  sentando las bases para futuras integraciones con backend.
+                </p>
+                <h3>Skills y tecnologías utilizadas en el proyecto</h3>
+                <ul>
+                  <li>HTML5 semántico</li>
+                  <li>CSS3 moderno</li>
+                  <li>Diseño responsivo (Responsive Web Design)</li>
+                  <li>Metodología BEM</li>
+                  <li>Flexbox y CSS Grid</li>
+                  <li>Media Queries</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>Manipulación del DOM</li>
+                  <li>Manejo de eventos</li>
+                  <li>Programación orientada a objetos (POO)</li>
+                  <li>Validación de formularios</li>
+                </ul>
+
+                <h3>¿Qué aprendi o qué logre?</h3>
+                <p>
+                  Aprendí a trabajar con JavaScript de forma más estructurada,
+                  creando clases como Card y FormValidator para encapsular la
+                  lógica de la aplicación. También reforcé el uso de módulos
+                  ES6, la validación de formularios, el manejo de eventos y
+                  ventanas emergentes, y la construcción de interfaces
+                  responsivas. Como resultado, logré un proyecto funcional,
+                  organizado y escalable, con una base sólida para futuras
+                  integraciones con backend.
+                </p>
+              </div>
+              <div class="work__image-box">
+                <img
+                  class="work__image"
+                  src="images/project_around.png"
+                  alt="primera imagen de prueba"
+                />
+
+                <img
+                  class="work__image"
+                  src="images/project_around_edit.png"
+                  alt="primera imagen de prueba"
+                />
+
+                <img
+                  class="work__image"
+                  src="images/project_around_zoom.png"
+                  alt="primera imagen de prueba"
+                />
+
+                <img
+                  class="work__image"
+                  src="images/project_around_new.png"
+                  alt="primera imagen de prueba"
+                />
+
+                <div class="work__logo">
+                  <a
+                    href="https://github.com/patrocl0/web_project_around#"
+                    title="View Source Code"
+                  >
+                    <img src="images/github-mark-white.svg" alt="Logo github" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Frameworks">
+          <h2 class="titleWork">Frameworks & languages</h2>
+
+          <div class="frameworks__content">
+            <div class="frameworks__logo">
+              <img src="images/html5.png" alt="" />
+              <p>HTML5</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/css3.png" alt="" />
+              <p>CSS3</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/logoJS.png" alt="" />
+              <p>JavaScript</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/react.png" alt="" />
+              <p>React</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/vite.png" alt="" />
+              <p>Vite</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/nodejs.png" alt="" />
+              <p>Node.js</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/express.png" alt="" />
+              <p>Express</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/mongo.png" alt="" />
+              <p>Mongo</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/firebase.png" alt="" />
+              <p>Firebase</p>
+            </div>
+
+            <div class="frameworks__logo">
+              <img src="images/figma.png" alt="" />
+              <p>Figma</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="About">
+          <h2 class="titleWork">About Me</h2>
+
+          <div class="work__box">
+            <div class="work__text">
+              <img src="images/stiven.jpg" alt="" />
+            </div>
+
+            <div class="about__text">
+              <p>
+                Soy un desarrollador web dedicado, con una gran pasión por
+                crear, aprender y desplegar sitios web dinámicos. En este sitio
+                encontrarás una muestra de mis proyectos recientes, junto con
+                las tecnologías, lenguajes y frameworks en los que me
+                especializo.
+              </p>
+              <p>
+                Siempre estoy entusiasmado por asumir nuevos retos y colaborar
+                en proyectos innovadores. Si te gustaría conectar, intercambiar
+                ideas o explorar oportunidades para trabajar juntos, no dudes en
+                contactarme. ¡Será un gusto saber de ti!
+              </p>
+              <a href="docs/brayan_mora_cv.pdf" class="btn btn-mycv"
+                >My Resume</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="Contact">
+          <h2 class="titleWork">Get in Touch</h2>
+          <p>Correo: brayanestiven1208@gmail.com</p>
+
+          <div class="contact__logo">
+            <a href="https://github.com/patrocl0">
+              <img src="images/github-mark-white.svg" alt="Logo github" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/patrocl0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >
+              <img src="images/linkedin.svg" alt="Logo Linkedin" />
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__text">© 2025. Stiven Mora</p>
+      </footer>
+    </div>
   </body>
 </html>
